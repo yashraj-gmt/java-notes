@@ -1,0 +1,113 @@
+Design Patterns:
+		-Christopher Alexander (1977)
+================
+	Design pattern are the well proved solution of commonly occurring problems in software design.
+	Design pattern represents an idea.
+	Code Reusability: applied different projects and problems, save time and effort solving similar issues
+	Standardization
+	Efficiency improves
+	Code Flexibility
+
+🔴Types of Design Patterns:
+ 	1. Creational Design Patterns
+		i.   Singleton Method Design Pattern
+  	   	ii.  Factory Method Design Pattern
+		iii. Abstract Factory Design Pattern
+		iv.  Prototype Design Pattern
+		v.   Builder Design Pattern
+
+ 	2. Structural Design Patterns
+		i.   Adapter Design Pattern
+  	   	ii.  Bridge Design Pattern
+		iii. Composite Method | Software Design Pattern
+		iv.  Flyweight Design Pattern
+		v.   Proxy Design Pattern
+
+	3. Behavioral Design Patterns
+		i.   Strategy Design Pattern
+  	   	ii.  Observer Design Pattern
+
+▫️1. Creational Design Patterns:
+      **************************
+	- focus on object creating means aim to enhance flexibility and efficiency in object creation
+	(a) Singleton Design Pattern
+		It ensures that a class has only one instance and provides global point of access to it.
+	Types: 1. Lazy:- which creates only when needed
+		  Eager:- Created while class loading no matter of needed or not	
+
+	Adv.:- (a) Single Instance all over application
+	       (b) Global Access to that instance
+	       (c) Thread Safety
+	       (d) Private Constructor
+		 
+	Uses:- (a) Managing db connection by only one con. per appl.
+	       (b) Single logger instance used by different classes in appl.
+
+Ex.
+public class Singleton {
+    private static Singleton instance;
+
+    private Singleton() {} // private constructor
+
+    public static Singleton getInstance() {
+        if (instance == null) {
+            instance = new Singleton(); // lazy initialization
+        }
+        return instance;
+    }
+}
+---------------------------------------------
+	(b) Factory Method Design Pattern:
+		It provides an interface for creating objects in a superclass while allowing subclasses to specify the types of objects they create.
+	Uses: (a) The client only depends on the interface, not the actual class.	
+	      (b) Loose Coupling
+	      (c) Easy to extend
+	      (d) Improves code readability and testability
+
+
+
+interface Shape {
+    void draw();
+}
+
+class Circle implements Shape {
+    public void draw() {
+        System.out.println("Circle");
+    }
+}
+
+class Square implements Shape {
+    public void draw() {
+        System.out.println("Square");
+    }
+}
+
+class ShapeFactory {
+    public Shape getShape(String type) {
+        if (type.equals("circle")) return new Circle();
+        else if (type.equals("square")) return new Square();
+        return null;
+    }
+}
+-------------------------------------------
+	(c) Abstract Factory Design pattern
+		It is a way of organizing how you create groups of things that are related to each other. It provides a set of rules or instructions that let you create different types of things without knowing exactly what those things are. This helps you keep everything organized and lets you switch between different types easily.
+	Uses:
+When your system requires multiple families of related products and you want to ensure compatibility between them.
+When you need flexibility and extensibility, allowing for new product variants to be added without changing existing client code.
+When you want to encapsulate the creation logic, making it easier to modify or extend the object creation process without affecting the client.
+When you aim to maintain consistency across different product families, ensuring a uniform interface for the products.
+-------------------------------------------------
+
+	(d) Builder Design Pattern:
+		 It allows the construction of a product in a step-by-step manner, where the construction process can change based on the type of product being built. This pattern separates the construction of a complex object from its representation, allowing the same construction process to create different representations.
+---------------------------------
+
+	(e) Prototype Design Pattern:
+		It is required when object creation is a time-consuming, and costly operation, so we create objects with the existing object itself to by copying the existing ones.
+	Uses:
+		Object creation is costly (e.g., complex setup, DB call).
+
+		You want to avoid calling a constructor repeatedly.
+
+		You want to decouple the client from specific classes.	

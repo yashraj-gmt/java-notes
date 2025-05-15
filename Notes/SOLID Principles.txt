@@ -1,0 +1,71 @@
+Java Solid Principles:
+______________________
+
+SOLID principles: are five key design principles in OOP that help developers write clean, maintainable and scalable code.
+				-By Robert C. Martin
+
+S: Single Responsibility Principle (SRP)
+O: Open & Close Principle (OCP)
+L: Leskov Substitution Principle (LSP)
+I: Interface Segregation Principle (ISP)
+D: Dependency Inversion Principle (DIP)
+===========================================
+
+Why?
+- Makes code easier to understand
+- Reduce tight coupling of code
+- Reduces Bugs by isolating responsibilities
+- Improves testability (unit tests)
+- Makes future changes easier without breaking existing code(flexible)
+- Encourages reusable and flexible code design
+
+-----------------------------------------------------------------
+
+1. Sloid Responsibility Principle(SRP):
+- A class should have only one reason to change means every class should have a single responsibility or single purpose.
+Ex.
+ 	Waiter in restaurant:
+		- Responsibilities are taking orders, Serve food and drinks, Ensure guests satisfied with dining experience
+		- But if same waiter also expected to good food in kitchen, clean dishes, taking orders, handling restaurant finances it creates confusion and reduces water ability's to provide good service.
+	
+==> To follow SRP:
+	- Waiter should serve food and attend to customers 
+	- Chef should cook
+	- Cleaning staff should handle cleanliness
+	- Manager should handle staff and finances 
+-----------------------------------------------------------------
+
+2. Open/Closed Principle:
+  - this states Software entities(classes, modules, functions, etc) should be open for extension, but closed for modification which means you should be able to extend a class behavior, without modifying it.
+
+Ex. 
+	Creating interface as PaymentProcessor to define common method processPayment(double amount).
+	And another classes implements this interface like CreditCardPaymentProcessor handles credit card payments and PayPalPaymentProcesssor handling paypal payment process
+	The system is open for extension (new payment types like UPI or Bitcoin can be added) and closed for modification (existing code remains unchanged) — fully following the Open/Closed Principle.
+--------------------------------------------------------
+
+3. Liskov's Substitution Principle:
+-> Its states that all derived or child classes must be substitutable for their base or parent classes.
+Ex.
+Instead of forcing a Square to be a subclass of Rectangle, we:
+Created a common interface (Shape).
+Implemented independent classes: Rectangle and Square.
+Avoided breaking LSP by not misusing inheritance.
+---------------------------------------------------------
+
+4. Interface Segregation Principle (ISP):
+- Clients should not be forced to depend on interfaces they do not use.
+- This means its better to create several small, specific interfaces rather that one large, general-purpose interface.
+Ex. 
+	->In Restaurant Menu card 
+		- Vegretarian customers want only a vegetarian menu
+		- Non-Vegetarian customers want only a non-vegetarian menu.
+		- Some customers may only want drinks
+	Instead of giving everyone one big menu with everything(veg, non-veg, drinks), the restaurant provides separate menu based on customer type.
+--------------------------------------------------------
+
+5. Dependency Inversion Principle (DIP):
+	High level modules should not depend on low-level modules. Both should depend on abstractions.
+	Means code should depend on interfaces or abstract classes, not concrete implementations and details should depend on abstractions, not the other way around
+Ex: 
+	In a software development team, developers depend on an abstract version control system (e.g., Git) to manage and track changes to the codebase. They don’t depend on specific details of how Git works internally.

@@ -8,6 +8,7 @@ Design Patterns:
 	Efficiency improves
 	Code Flexibility
 
+
 🔴Types of Design Patterns:
  	1. Creational Design Patterns
 		i.   Singleton Method Design Pattern

@@ -11,7 +11,7 @@ Design Patterns:
 
 🔴Types of Design Patterns:
  	1. Creational Design Patterns
-		i.   Singleton Method Design Pattern
+		i.   Singleton Design Pattern
   	   	ii.  Factory Method Design Pattern
 		iii. Abstract Factory Design Pattern
 		iv.  Prototype Design Pattern
@@ -112,3 +112,53 @@ When you aim to maintain consistency across different product families, ensuring
 		You want to avoid calling a constructor repeatedly.
 
 		You want to decouple the client from specific classes.	
+
+=====================================================================================================
+▫️2. Structural Design Pattern
+	Is a way to combine or arrange different classes and objects to form a complex or bigger structure to solve a particular requirement.
+	or 
+	Organize code by defining relationships between objects and classes like building blocks in a structure.
+
+	Types:
+		1. Decorator Pattern
+		2. Proxy Pattern
+		3. Composite Pattern
+		4. Adapter Pattern
+		5. Bridge Pattern
+		6. Facade
+		7. Flyweight
+	
+	1. Decorator Pattern:
+		Used when you want to add extra features to an object without modifying its code.
+		Ex. You buy a plain coffee and add milk or sugar without changing the original coffee
+
+	2. Proxy Pattern:
+		Used when you want to control access to an object e.g. delay creation, logging, security
+		Ex. An Bank ATM machine acts as a proxy to access your bank account
+	3. Composite Pattern: 
+		Used when you want to treat single objects and groups the same way.
+		A folder contains files and subfolders. You can open both in the same way.
+
+	4. Adapter Pattern:
+		Used when want two incompatiple interfaces to work together
+		Ex. Suppose you have two buddies, one of them speaks French exclusively and the other English exclusively. The language barrier prevents them from communicating the way you want them to.   
+		You act as an adapter, translating messages between them. Your role allows the English speaker to convey messages to you, and you convert those messages into French for the other person.
+		In this way, despite the language difference, your adaptation enables smooth communication between your friends.
+		This role you play is similar to the Adapter design pattern, bridging the gap between incompatible interfaces. 
+
+	5. Flyweight Pattern
+		You need to create a large number of similar objects
+		Ex. A text editor uses character objects instead of creating new ones every time.
+
+=============================================
+▫️3. Behavioral Design Pattern:
+	This pattern concerned with how objects interact with each other, how responsibilities are distributed, and how communication happens.
+
+		1. Strategy Design Pattern:
+			Changes or selects runtime algorithm from many
+			Ex. selecting payment method at run time
+
+		2. Observer Design Pattern:
+			Notify multiple objects when one changes.
+			Ex. YouTube subscribers get notified when a video is uploaded.	
+  		

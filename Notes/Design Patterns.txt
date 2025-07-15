@@ -6,6 +6,7 @@ Design Patterns:
 	Code Reusability: applied different projects and problems, save time and effort solving similar issues
 	Standardization
 	Efficiency improves
+
 	Code Flexibility
 
 

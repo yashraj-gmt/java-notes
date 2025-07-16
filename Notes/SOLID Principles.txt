@@ -4,7 +4,7 @@ ______________________
 SOLID principles: are five key design principles in OOP that help developers write clean, maintainable and scalable code.
 				-By Robert C. Martin
 
-S: Single Responsibility Principle (SRP)
+S: Single Responsibility Principle (SRP) 
 O: Open & Close Principle (OCP)
 L: Leskov Substitution Principle (LSP)
 I: Interface Segregation Principle (ISP)

@@ -4,7 +4,7 @@ Design Patterns:
 	Design pattern are the well proved solution of commonly occurring problems in software design.
 	Design pattern represents an idea.
 	Code Reusability: applied different projects and problems, save time and effort solving similar issues
-	Standardization
+	Standardization 
 	Efficiency improves
 
 	Code Flexibility

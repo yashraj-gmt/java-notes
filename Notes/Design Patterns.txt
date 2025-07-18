@@ -15,7 +15,7 @@ Design Patterns:
 		i.   Singleton Design Pattern
   	   	ii.  Factory Method Design Pattern
 		iii. Abstract Factory Design Pattern
-		iv.  Prototype Design Pattern
+		iv.  Prototype Design Pattern 
 		v.   Builder Design Pattern
 
  	2. Structural Design Patterns

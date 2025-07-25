@@ -11,7 +11,7 @@ I: Interface Segregation Principle (ISP)
 D: Dependency Inversion Principle (DIP)
 ===========================================
 
-Why?
+Why? 
 - Makes code easier to understand
 - Reduce tight coupling of code
 - Reduces Bugs by isolating responsibilities

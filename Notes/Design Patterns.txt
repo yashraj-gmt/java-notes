@@ -25,6 +25,7 @@ Design Patterns:
 		iv.  Flyweight Design Pattern
 		v.   Proxy Design Pattern
 
+
 	3. Behavioral Design Patterns
 		i.   Strategy Design Pattern
   	   	ii.  Observer Design Pattern

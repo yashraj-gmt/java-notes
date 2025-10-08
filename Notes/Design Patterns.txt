@@ -10,7 +10,7 @@ Design Patterns:
 	Code Flexibility
   
  
-🔴Types of Design Patterns: 
+🔴Types of Design Patterns:  
  	1. Creational Design Patterns
 		i.   Singleton Design Pattern
   	   	ii.  Factory Method Design Pattern
